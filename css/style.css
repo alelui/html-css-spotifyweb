@@ -6,11 +6,15 @@
     box-sizing: border-box;
 }
 
-.clearfix:after{
+.row:after{
     content: '';
     display: table;
     clear: both;
 }
+.left{
+    float: left;
+}
+
 
 
 /* *** HEADER *** */
@@ -21,3 +25,35 @@
 
 /* *** DEBUG *** */
 
+.debug .container{
+    max-width: 320px;
+    margin: 10px auto;
+    height: 500px;
+    background-color: yellow;
+}
+.debug .row{
+    height: 100%;
+}
+.debug .row aside{
+    height: 100%;
+    width: 10%;
+    background-color: black;
+}
+.debug .row .header,
+.debug .row .main{
+    width: 90%;
+
+}
+.debug .row .header{
+    height: 10%;
+    background-color: turquoise;
+}
+.debug .row .main{
+    height: 90%;
+    background-color: blueviolet;
+}
+
+.debug footer{
+    height: 50px;
+    background-color: gray;
+}
