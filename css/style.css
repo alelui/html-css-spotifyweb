@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    color: white;
+}
+
 .row:after{
     content: '';
     display: table;
@@ -13,6 +17,14 @@
 }
 .left{
     float: left;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -27,7 +39,8 @@
 
 .debug .container{
     max-width: 320px;
-    margin: 10px auto;
+    margin:auto;
+    margin-top: 10px;
     height: 500px;
     background-color: yellow;
 }
@@ -37,8 +50,25 @@
 .debug .row aside{
     height: 100%;
     width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: black;
 }
+
+.debug .row aside .up,
+.debug .row aside .down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.debug .row aside i{
+    margin: 2px 0;
+}
+
+
 .debug .row .header,
 .debug .row .main{
     width: 90%;
