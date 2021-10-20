@@ -8,6 +8,8 @@
 
 body{
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 
 .row:after{
@@ -56,25 +58,23 @@ a{
 
 .debug .row aside .up,
 .debug .row aside .down{
-
     border: 1px solid yellow;
 }
 
-.debug .row aside i{
-    margin: 2px 0;
-}
-
-.debug .row aside .up img{
-    width: 25px;
+.debug .row aside img{
+    width: 20px;
     vertical-align: bottom;
 }
+.debug .row aside li{
+    line-height: 20px;
+    padding: 2px 8px;
+}
 
-.debug .row aside .up .logo img#l{
+.debug .row aside .logo img#l{
     display: none;
 }
 
-
-.debug .row aside .up span{
+.debug .row aside span{
     display: none;
 }
 
@@ -147,15 +147,16 @@ a{
         align-items: unset;
     }
 
-    .debug .row aside .up span{
+    .debug .row aside span{
         display: inline;
     }
 
-    .debug .row aside .up .logo img#l{
+    .debug .row aside .logo img#l{
         display: inline-block;
-        width: 150px;
+        width: 120px;
+        padding: 5px;
     }
-    .debug .row aside .up .logo img#s{
+    .debug .row aside .logo img#s{
         display: none;
     }
     
