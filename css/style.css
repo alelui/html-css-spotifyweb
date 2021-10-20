@@ -56,11 +56,6 @@ a{
     background-color: black;
 }
 
-.debug .row aside .up,
-.debug .row aside .down{
-    border: 1px solid yellow;
-}
-
 .debug .row aside img{
     width: 20px;
     vertical-align: bottom;
@@ -70,7 +65,8 @@ a{
     padding: 2px 8px;
 }
 
-.debug .row aside .logo img#l{
+.debug .row aside .logo img#l,
+.debug .row aside .playlist{
     display: none;
 }
 
@@ -123,7 +119,22 @@ a{
 .debug footer .center{
     width: 60%;
     background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
+
+.debug footer .center .up{
+    width: 125px;
+    height: 25px;
+    background-color: coral;
+}
+.debug footer .center .down{
+    width: 55%;
+    height: 25px;
+    background-color: coral;
+}
+
 .debug footer .right{
     background-color: blanchedalmond;
 }
@@ -132,7 +143,7 @@ a{
 
 
 
-@media screen and (min-width: 414px){
+@media screen and (min-width: 415px){
 
     .debug .row aside{
         width: 190px;
@@ -151,11 +162,16 @@ a{
         display: inline;
     }
 
+    .debug .row aside .playlist{
+        display: block;
+    }
+
     .debug .row aside .logo img#l{
         display: inline-block;
         width: 120px;
         padding: 5px;
     }
+
     .debug .row aside .logo img#s{
         display: none;
     }
