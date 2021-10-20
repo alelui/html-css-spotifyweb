@@ -39,15 +39,10 @@ a{
 
 /* *** DEBUG *** */
 
-.debug .container{
-    max-width: 100%;
-    margin:auto;
-    margin-top: 10px;
-    height: 568px;
-    background-color: yellow;
-}
+
 .debug .row{
-    height: 100%;
+    height: calc(100vh - 50px);
+    background-color: yellow;
 }
 .debug .row aside{
     height: 100%;
@@ -61,14 +56,31 @@ a{
 
 .debug .row aside .up,
 .debug .row aside .down{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    border: 1px solid yellow;
 }
 
 .debug .row aside i{
     margin: 2px 0;
 }
+
+.debug .row aside .up img{
+    width: 25px;
+    vertical-align: bottom;
+}
+
+.debug .row aside .up .logo img#l{
+    display: none;
+}
+
+
+.debug .row aside .up span{
+    display: none;
+}
+
+
+
+
 
 
 .debug .row .header,
@@ -77,12 +89,17 @@ a{
 }
 .debug .row .header{
     height: 10%;
-    background-color: turquoise;
+    background-color: black
 }
 .debug .row .main{
     height: 90%;
     background-color: blueviolet;
 }
+
+
+
+
+
 
 .debug footer{
     height: 50px;
@@ -124,6 +141,23 @@ a{
     .debug .row .header,
     .debug .row .main{
         width: calc(100% - 190px)
-}
+    }
+
+    .debug .row aside{
+        align-items: unset;
+    }
+
+    .debug .row aside .up span{
+        display: inline;
+    }
+
+    .debug .row aside .up .logo img#l{
+        display: inline-block;
+        width: 150px;
+    }
+    .debug .row aside .up .logo img#s{
+        display: none;
+    }
+    
 
 }
