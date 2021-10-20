@@ -49,7 +49,6 @@ h2{
 
 .debug .row{
     height: calc(100vh - 50px);
-    background-color: gray
 }
 .debug .row aside{
     height: 100%;
@@ -84,19 +83,36 @@ h2{
 
 
 
-
 .debug .row .header,
 .debug .row .main{
     width: calc(100% - 32px)
 }
 .debug .row .header{
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: right;
+    line-height: 50px;
 }
+
+.debug .row .header a{
+    margin-right: 5px;
+    padding: 5px 25px;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
 .debug .row .main{
-    height: calc(100% - 50px);
-    background-color: gray;
+
+    height: 100%;
+    /* background-color: #141922; */
+    background-color: #19202d;
     overflow-y: scroll;
+    padding-top: 50px;
 }
 
 .debug .row .main ul{
@@ -128,10 +144,9 @@ h2{
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
+    text-align: center;
 }
+
 
 
 
@@ -218,5 +233,4 @@ h2{
         display: none;
     }
     
-
 }
