@@ -52,7 +52,7 @@ h2{
 }
 .debug .row aside{
     height: 100%;
-    min-height: 400px;
+    min-height: 500px;
     width: 32px;
     display: flex;
     flex-direction: column;
@@ -220,7 +220,27 @@ h2{
     }
 
     .debug .row aside .playlist{
+        margin-top: 20px;
         display: block;
+        height: 200px;
+        overflow: auto;
+    }
+
+    .debug .row aside .playlist #plus{
+        display: flex;
+        align-items: center;
+    }
+
+    .debug .row aside .playlist #plus span{
+        padding: 0 5px;
+    }
+
+    .debug .row aside .playlist li:first-child{
+        text-transform: uppercase;
+    }
+
+    .debug .row aside .playlist i{
+        font-size: 30px;
     }
 
     .debug .row aside .logo img#l{
