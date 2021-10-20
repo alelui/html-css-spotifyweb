@@ -129,24 +129,37 @@ h2{
 
 }
 .debug .row .main h2{
+    width: 100%;
     margin: 10px;
 }
+
 .debug .row .main .recently-played{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.debug .row .main .recently-played .albums{
-    width: calc(100% / 2 - 10px);
-    max-width: 200px;
-    margin: 5px auto;
+.debug .row .main .row-zero{
+    display: flex;
 }
 
-.debug .row .main .recently-played .albums img{
+.debug .row .main .created-by{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.debug .row .main .albums{
+    width: calc(100% / 2 - 10px);
+    max-width: 200px;
+    margin: 5px;
+}
+
+.debug .row .main .albums img{
     width: 100%;
 }
-.debug .row .main .recently-played .albums .album-text{
+.debug .row .main .albums .album-text{
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -228,8 +241,11 @@ h2{
     .debug .row aside .playlist{
         margin-top: 20px;
         display: block;
-        height: 200px;
+        
+    }
+    .debug .row aside .playlist .elenco-play{
         overflow: auto;
+        height: 120px;
     }
 
     .debug .row aside .playlist #plus{
@@ -239,10 +255,6 @@ h2{
 
     .debug .row aside .playlist #plus span{
         padding: 0 5px;
-    }
-
-    .debug .row aside .playlist li:first-child{
-        text-transform: uppercase;
     }
 
     .debug .row aside .playlist i{
