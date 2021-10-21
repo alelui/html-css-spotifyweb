@@ -12,14 +12,12 @@ body{
     font-size: 12px;
 }
 
-.clearfix:after{
+.row:after{
     content: '';
     display: table;
     clear: both;
 }
-.left,
-.center,
-.right{
+.left{
     float: left;
 }
 
@@ -109,7 +107,6 @@ h2{
 .debug .row .main{
 
     height: 100%;
-    /* background-color: #141922; */
     background-color: #19202d;
     overflow-y: scroll;
     padding-top: 50px;
@@ -174,22 +171,48 @@ h2{
     position: fixed;
     bottom: 0;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
-.debug footer .left,
+.debug footer .sx,
 .debug footer .center,
-.debug footer .right{
+.debug footer .dx{
     height: 100%;
 }
 
-.debug footer .left,
-.debug footer .right{
+.debug footer .sx,
+.debug footer .dx{
     width: 20%;
+    max-width: 150px;
 }
 
-.debug footer .left{
-    background-color: chartreuse;
+.debug footer .sx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.debug footer .sx .mini-album{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.debug footer .sx .mini-text{
+    margin: 0 5px;
+    font-size: 7px;
+}
+
+.debug footer .sx .mini-album h5{
+    font-size: 10px;
+}
+
+.debug footer .sx  img{
+    padding: 2px;
+    height: 40px;
+}
+
 .debug footer .center{
     width: 60%;
     display: flex;
@@ -237,10 +260,9 @@ h2{
     font-size: 8px;
 }
 
-.debug footer .right{
+.debug footer .dx{
     background-color: blue;
 }
-
 
 
 
@@ -310,6 +332,8 @@ h2{
         font-size: 10px;
     }
 }
+
+
 
 
 @media screen and (min-width: 786px){
