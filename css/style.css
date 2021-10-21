@@ -145,9 +145,31 @@ h2{
     margin: 10px;
 }
 
+.debug .row .main .albums i{
+    display: none;
+}
+
 .debug .row .main .albums img{
     width: 100%;
 }
+
+.debug .row .main .albums:hover img{
+    opacity: 50%;
+}
+
+.debug .row .main .albums .album-img{
+    position: relative;
+}
+.debug .row .main .album-img:hover .fa-play-circle{
+    font-size: 38px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    
+}
+
 .debug .row .main .albums .album-text{
     max-width: 100%;
     display: flex;
