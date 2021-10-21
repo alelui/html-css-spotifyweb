@@ -170,7 +170,7 @@ h2{
 .debug footer{
     width: 100%;
     height: 50px;
-    background-color: gray;
+    background-color: #282828;
     position: fixed;
     bottom: 0;
     z-index: 1;
@@ -192,7 +192,6 @@ h2{
 }
 .debug footer .center{
     width: 60%;
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center
@@ -200,13 +199,42 @@ h2{
 
 .debug footer .center .up{
     width: 125px;
-    height: 25px;
-    background-color: coral;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.debug footer .center .up i{
+    font-size: 10px;
+}
+.debug footer .center .up .fa-play-circle{
+    font-size: 18px;
+}
+
 .debug footer .center .down{
     width: 55%;
-    height: 25px;
-    background-color: coral;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.debug footer .center .down .progress-bar{
+    width: 60%;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #5a5a5a;
+}
+.debug footer .center .down .progress-bar div{
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #c1c1c1;
+}
+
+.debug footer .center .down .time{
+    font-size: 8px;
 }
 
 .debug footer .right{
@@ -274,14 +302,26 @@ h2{
         max-width: 200px;
         margin: 10px;
     }
+
+    .debug footer .center .down .progress-bar{
+        width: 65%;
+    }
+    .debug footer .center .down .time{
+        font-size: 10px;
+    }
 }
 
 
-@media screen and (min-width: 996px){
+@media screen and (min-width: 786px){
     .debug .row .main .albums{
         width: calc(100% / 6 - 20px);
         max-width: 200px;
         margin: 10px;
     }
+
+    .debug footer .center .down .progress-bar{
+        width: 80%;
+    }
+
 
 }
